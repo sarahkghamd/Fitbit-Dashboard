@@ -1,0 +1,187 @@
+<main> 
+  <div class="sidebar">
+    <div class="logo"></div>
+    <ul class="menu">
+
+        <li class="active">
+            <a href="#">
+                <i class="bi bi-speedometer"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+                    <li>
+            <a href="#">
+                <i class="bi bi-person-circle"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+                                <li>
+            <a href="#">
+                <i class="bi bi-gear"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+                                            <li>
+            <a href="#">
+                <i class="bi bi-box-arrow-left"></i>
+                <span>Logout</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="main--content" >
+    <div class="header--wrapper">
+        <div class="header--title">
+            <span>Sarah's</span>
+            <h2>{{title}}</h2>
+        </div>
+        <div class="user--info">
+            <div class="search--box">
+                <i class="bi bi-search"></i>
+            <input  placeholder="Search" />
+        </div>
+            <img src="../assets/logo.png" />
+            </div>
+    </div>
+    <div class="card-container">
+        <h3 class="main--title">Best Records</h3>
+        <div class="card--wrapper">
+            <div class="card">
+                <div class="card--header">
+                    <div class="value">
+                        <span class="title">
+                            Best Distance
+                        </span>
+                        <span class="best-distance" id="best-distance">
+                            {{ bestDistance.value | number: '1.0-2' }} km
+                        </span>
+                    </div>
+                    <i class="bi bi-geo-fill"></i>
+                </div>
+                <span class="card-detail" id="best-distance-date">on day {{ bestDistance.date }}</span>
+            </div>
+
+            <div class="card">
+                <div class="card--header">
+                    <div class="value">
+                        <span class="title" >
+                            Best Floors
+                        </span>
+                        <span class="best-distance" id="best-floors">
+                            {{ bestFloors.value | number: '1.0-2' }} floors
+                        </span>
+                    </div>
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
+                <span class="card-detail" id="best-floors-date">on day {{ bestFloors.date }}</span>
+            </div>
+
+
+            <div class="card">
+                <div class="card--header">
+                    <div class="value">
+                        <span class="title">
+                            Best Steps
+                        </span>
+                        <span class="best-distance" id="best-steps">
+                            {{ bestSteps.value | number: '1.0-2' }} steps
+                        </span>
+                    </div>
+                    <i class="bi bi-person-walking"></i>
+
+                </div>
+                <span class="card-detail" id="best-steps-date">on day {{ bestSteps.date }}</span>
+            </div>
+
+            <div class="card">
+                <div class="card--header">
+                    <div class="value">
+                        <span class="title">
+                            Best Active Mins
+                        </span>
+                        <span class="best-distance">
+                            {{ bestActiveMinutes.value }} mins
+                        </span>
+                    </div>
+                    <i class="bi bi-stopwatch"></i>
+                </div>
+                <span class="card-detail">on day {{ bestActiveMinutes.date }}</span>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="card-container">
+        <h3 class="main--title">Lifetime Records</h3>
+        <div class="card--wrapper">
+            <div class="card">
+                <div class="card--header">
+                    <div class="value">
+                        <span class="title">
+                            Distance
+                        </span>
+                        <span class="best-distance">
+                            {{ lifetimeDistance | number: '1.0-2' }} km
+                        </span>
+                    </div>
+                    <i class="bi bi-geo-fill"></i>
+                </div>
+                <span class="card-detail"></span>
+            </div>
+
+            <div class="card">
+                <div class="card--header">
+                    <div class="value">
+                        <span class="title">
+                            Floors
+                        </span>
+                        <span class="best-distance">
+                            {{ lifetimeFloors | number: '1.0-2'}} floors
+                        </span>
+                    </div>
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
+                
+            </div>
+
+
+            <div class="card">
+                <div class="card--header">
+                    <div class="value">
+                        <span class="title">
+                            Steps
+                        </span>
+                        <span class="best-distance">
+                            {{ lifetimeSteps | number: '1.0-2' }} Steps
+                        </span>
+                    </div>
+                    <i class="bi bi-person-walking"></i>
+                </div>
+                
+            </div>
+
+            <div class="card">
+                <div class="card--header">
+                    <div class="value">
+                        <span class="title">
+                             Active Mins
+                        </span>
+                        <span class="best-distance">
+                            {{ lifetimeActiveScore }} mins
+                        </span>
+                    </div>
+                    <i class="bi bi-stopwatch"></i>
+                </div>
+       
+            
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+</main>

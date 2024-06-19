@@ -1,0 +1,237 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+main {
+    display: flex;
+}
+form{
+    display:flex;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #00B1BB;
+}
+
+.sidebar:hover{
+    width:18rem;
+    transition: 0.5s;
+}
+
+.logo {
+    height: 80px;
+    padding: 16px;
+}
+
+.menu {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+    .menu li {
+        padding: 1rem;
+        margin: 8px 0;
+        border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+    }
+
+        .menu li:hover, .active {
+            background: #73D0D7;
+        }
+
+
+.menu a{
+    color: #fff;
+    font-size:20px;
+    text-decoration:none;
+    font-weight:500;
+    display:flex;
+    align-items:center;
+    gap: 1.5rem;  
+}
+
+
+.menu a span{
+    overflow:hidden;
+}
+
+    .menu a i {
+        font-size: 1.2rem;
+    }
+
+    .logout{
+        position: absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+    }
+
+
+    /*-----------------------------*/
+
+
+    .main--content{
+        position:relative;
+        background:#eee;
+        width:100%;
+        padding:1rem;
+    }
+
+.header--wrapper img{
+width:50px;
+height:50px;
+cursor:pointer;
+border-radius: 50%;
+
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background:#fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+.header--title{
+    color:#083140
+}
+
+.user--info{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.search--box{
+    background: #eee;
+    border-radius: 15px;
+    color:#999;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    padding:0.1rem 1.2rem;
+
+
+}
+
+
+.search--box input{
+    background: transparent;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.search--box i {
+    font-size: 1.2rem;
+    cursor:pointer;
+    transition: all 0.5s ease-out;
+
+}
+
+.search--box i:hover{
+    transform: scale(1.3);
+    
+}
+
+/*------------------------------------*/
+
+.card-container{
+    background:#fff ;
+    padding:2rem;
+    border-radius: 10px;
+    margin:2rem 0rem;
+}
+
+.card--wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    /* justify-content: center; */
+    
+}
+
+.main--title{
+    color:#00B1BB;
+    padding-bottom:2rem;
+    font-size: 1.5rem;
+}
+
+.card{
+    background:#eee;
+    border-radius:0.5rem;
+    padding:1.2rem;
+    /* width:20%; */
+    /* flex: 1 1 14rem; */
+    width: 20rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover{
+    transform: translateY(-0.7rem);
+}
+.card--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.value{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.best-distance{
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+
+.bi-geo-fill, .bi-arrow-up-right, .bi-stopwatch, .bi-person-walking{
+    color:#00B1BB;
+    padding:1rem;
+    height: 3rem;
+    width:3rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+card-detail{
+    font-size: 1rem;
+    color:#999;
+}
+
+
